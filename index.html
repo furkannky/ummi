@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akademi Üniversitesi | Geleceğe Yön Verin</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Akademi Üniversitesi, modern eğitim kampüsü, yenilikçi araştırma merkezleri ve güçlü akademik kadrosuyla geleceğin liderlerini yetiştiriyor.">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar d-none d-lg-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <i class="fas fa-envelope me-2"></i> info@akademi.edu.tr
+                    <i class="fas fa-phone-alt ms-4 me-2"></i> +90 (212) 555 00 00
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="me-3" data-bs-toggle="modal" data-bs-target="#loginModal">Öğrenci Bilgi Sistemi</a>
+                    <a href="#" class="me-3">Kütüphane</a>
+                    <a href="#" class="me-3">Mezunlar</a>
+                    <span class="social-links-top ms-2">
+                        <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-graduation-cap me-2 text-warning"></i>Akademi<span>Üni.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Anasayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hakkimizda.html">Hakkımızda</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Akademik</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="programlar.html">Fakülteler</a></li>
+                            <li><a class="dropdown-item" href="programlar.html">Enstitüler</a></li>
+                            <li><a class="dropdown-item" href="programlar.html">Yüksekokullar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Araştırma</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Araştırma Merkezleri</a></li>
+                            <li><a class="dropdown-item" href="#">Laboratuvarlar</a></li>
+                            <li><a class="dropdown-item" href="#">Yayınlar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Kampüs Hayatı</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-apply" data-bs-toggle="modal" data-bs-target="#applyModal">Hemen Başvur</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div id="heroCarousel" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="https://images.unsplash.com/photo-1541339907198-e08756ebafe3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" class="d-block w-100" alt="Kampüs">
+                <div class="carousel-caption">
+                    <h1 class="hero-title">Geleceği Birlikte<br><span style="color: var(--secondary-color);">Şekillendirelim</span></h1>
+                    <p class="hero-text">Bilim, sanat ve teknolojinin buluşma noktasında, potansiyelinizi en üst düzeye çıkaracak modern eğitim yaklaşımı.</p>
+                    <a href="programlar.html" class="btn btn-warning hero-btn me-3">Programları İncele</a>
+                    <button type="button" class="btn btn-outline-light hero-btn" data-bs-toggle="modal" data-bs-target="#videoModal">Kampüs Turu</button>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" class="d-block w-100" alt="Mezuniyet">
+                <div class="carousel-caption">
+                    <h1 class="hero-title">Sınırları Aşan<br><span style="color: var(--secondary-color);">Başarılar</span></h1>
+                    <p class="hero-text">Uluslararası bağlantılarımız ve değişim programlarımız ile dünya vatandaşı olun.</p>
+                    <button type="button" class="btn btn-warning hero-btn" onclick="alert('Uluslararası ofis sayfasına yönlendiriliyorsunuz...')">Uluslararası Ofis</button>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" class="d-block w-100" alt="Kütüphane">
+                <div class="carousel-caption">
+                    <h1 class="hero-title">Sınırsız<br><span style="color: var(--secondary-color);">Kaynaklar</span></h1>
+                    <p class="hero-text">7/24 açık modern kütüphanemiz ve dijital veritabanlarımız ile araştırmalarınıza yön verin.</p>
+                    <button type="button" class="btn btn-warning hero-btn" onclick="alert('Dijital Kütüphaneye erişiliyor...')">Kütüphaneyi Keşfet</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="container">
+        <div class="stats-section">
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6 stat-item">
+                    <h2 class="counter" data-target="25000">0</h2>
+                    <p>Öğrenci</p>
+                </div>
+                <div class="col-md-3 col-sm-6 stat-item">
+                    <h2 class="counter" data-target="150">0</h2>
+                    <p>Program</p>
+                </div>
+                <div class="col-md-3 col-sm-6 stat-item">
+                    <h2 class="counter" data-target="85">0</h2>
+                    <p>Öğrenci Kulübü</p>
+                </div>
+                <div class="col-md-3 col-sm-6 stat-item">
+                    <h2 class="counter" data-target="98">0</h2>
+                    <p>Mezun İstihdamı (%)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="about-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Hakkımızda" class="img-fluid">
+                        <div class="about-experience">
+                            <h3>50+</h3>
+                            <p class="mb-0">Yıllık Akademik<br>Tecrübe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h6 class="text-warning fw-bold text-uppercase tracking-wider">Hakkımızda</h6>
+                    <h2 class="section-title mb-4">Geleceğin Liderlerini Yetiştiriyoruz</h2>
+                    <p class="lead mb-4">Yarım asrı aşan eğitim tecrübemizle, yenilikçi ve araştırmacı ruhu destekleyen bir vizyona sahibiz.</p>
+                    <p class="mb-4 text-muted">Akademi Üniversitesi olarak, öğrencilerimize sadece teorik bilgi değil, aynı zamanda pratik uygulama alanları sunarak onları iş dünyasına ve global rekabete en iyi şekilde hazırlıyoruz. Tam donanımlı laboratuvarlarımız, geniş kütüphanemiz ve uzman akademik kadromuz ile fark yaratıyoruz.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i> Uluslararası Akreditasyonlar</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i> Güçlü Sanayi İşbirlikleri</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i> Çift Anadal ve Yandal İmkanları</li>
+                    </ul>
+                    <a href="hakkimizda.html" class="btn btn-outline-primary btn-lg mt-2">Daha Fazla Bilgi</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section class="academics-section" id="academics">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-warning fw-bold text-uppercase">Programlarımız</h6>
+                <h2 class="section-title text-center">Akademik Birimler</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="faculty-card">
+                        <i class="fas fa-laptop-code faculty-icon"></i>
+                        <h4>Mühendislik Fakültesi</h4>
+                        <p>Teknolojiye yön veren, inovatif çözümler üreten mühendisler yetiştiriyoruz.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="faculty-card">
+                        <i class="fas fa-heartbeat faculty-icon"></i>
+                        <h4>Tıp Fakültesi</h4>
+                        <p>İnsan sağlığını ön planda tutan, donanımlı ve etik değerlere sahip hekimler.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="faculty-card">
+                        <i class="fas fa-balance-scale faculty-icon"></i>
+                        <h4>Hukuk Fakültesi</h4>
+                        <p>Adaletin temelini kavrayan, analitik düşünebilen hukukçular yetiştiriyoruz.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="faculty-card">
+                        <i class="fas fa-chart-line faculty-icon"></i>
+                        <h4>İşletme Fakültesi</h4>
+                        <p>Global ekonominin dinamiklerini anlayan geleceğin yöneticileri.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="programlar.html" class="btn btn-primary btn-lg">Tüm Programları Görüntüle</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Life Gallery -->
+    <section class="campus-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-warning fw-bold text-uppercase">Sosyal Yaşam</h6>
+                <h2 class="section-title text-center">Kampüs Hayatı</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1525926476834-8c8874136208?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Öğrenci Etkinlikleri">
+                        <div class="gallery-overlay">
+                            <h5>Öğrenci Kulüpleri</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Kariyer Fuarı">
+                        <div class="gallery-overlay">
+                            <h5>Kariyer Zirveleri</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1519452314548-5c4dff48fbbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Spor Kompleksi">
+                        <div class="gallery-overlay">
+                            <h5>Spor Tesisleri</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Events -->
+    <section class="news-section">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-5">
+                <div>
+                    <h6 class="text-warning fw-bold text-uppercase">Güncel</h6>
+                    <h2 class="section-title mb-0">Haberler & Duyurular</h2>
+                </div>
+                <button type="button" class="btn btn-outline-primary d-none d-md-block" onclick="alert('Haber Arşivine Gidiliyor...')">Tümünü Gör</button>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card news-card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Haber 1">
+                            <div class="news-date">
+                                <span>15</span> Eyl
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-primary mb-2">Akademik</span>
+                            <h5 class="card-title fw-bold">2026-2027 Akademik Yılı Açılış Töreni</h5>
+                            <p class="card-text text-muted">Yeni akademik yılımızın açılış töreni geniş katılımla gerçekleştirildi.</p>
+                            <a href="#" class="text-primary text-decoration-none fw-bold mt-2 d-inline-block" data-bs-toggle="offcanvas" data-bs-target="#newsOffcanvas">Devamını Oku <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card news-card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Haber 2">
+                            <div class="news-date">
+                                <span>22</span> Eki
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-warning text-dark mb-2">Etkinlik</span>
+                            <h5 class="card-title fw-bold">Uluslararası Teknoloji ve İnovasyon Zirvesi</h5>
+                            <p class="card-text text-muted">Sektörün öncü isimleri kampüsümüzde teknoloji trendlerini tartıştı.</p>
+                            <a href="#" class="text-primary text-decoration-none fw-bold mt-2 d-inline-block" data-bs-toggle="offcanvas" data-bs-target="#newsOffcanvas">Devamını Oku <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card news-card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Haber 3">
+                            <div class="news-date">
+                                <span>05</span> Kas
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-success mb-2">Başarı</span>
+                            <h5 class="card-title fw-bold">Mühendislik Takımımızdan Dünya Birinciliği</h5>
+                            <p class="card-text text-muted">Robotik takımımız, Amerika'da düzenlenen yarışmada büyük ödülü kazandı.</p>
+                            <a href="#" class="text-primary text-decoration-none fw-bold mt-2 d-inline-block" data-bs-toggle="offcanvas" data-bs-target="#newsOffcanvas">Devamını Oku <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4 d-block d-md-none">
+                <button type="button" class="btn btn-outline-primary" onclick="alert('Haber Arşivine Gidiliyor...')">Tümünü Gör</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand text-white d-block mb-4" href="#" style="font-size: 2rem;">
+                        <i class="fas fa-graduation-cap me-2 text-warning"></i>Akademi<span class="text-warning">Üni.</span>
+                    </a>
+                    <p class="mb-4">Eğitimde sınırları kaldıran yenilikçi vizyonumuzla, geleceğin dünyasını inşa edecek liderleri bugünden yetiştiriyoruz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Hızlı Linkler</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Hakkımızda</a></li>
+                        <li><a href="#">Akademik</a></li>
+                        <li><a href="#">Araştırma</a></li>
+                        <li><a href="#">Kampüs Hayatı</a></li>
+                        <li><a href="#">İnsan Kaynakları</a></li>
+                        <li><a href="#">Kariyer Merkezi</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Aday Öğrenciler</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Başvuru Süreci</a></li>
+                        <li><a href="#">Burs İmkanları</a></li>
+                        <li><a href="#">Yurtlar ve Konaklama</a></li>
+                        <li><a href="#">Değişim Programları</a></li>
+                        <li><a href="#">Sıkça Sorulan Sorular</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>İletişim</h5>
+                    <ul class="footer-links">
+                        <li class="d-flex mb-3">
+                            <i class="fas fa-map-marker-alt text-warning mt-1 me-3"></i>
+                            <span>Üniversite Cad. No:1 Kampüs, Merkez / Türkiye</span>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="fas fa-phone-alt text-warning mt-1 me-3"></i>
+                            <span>+90 (212) 555 00 00</span>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="fas fa-envelope text-warning mt-1 me-3"></i>
+                            <span>info@akademi.edu.tr</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-md-start">
+                        <p class="mb-0">&copy; 2026 Akademi Üniversitesi. Tüm hakları saklıdır.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                        <a href="#" class="text-white text-decoration-none me-3" style="opacity:0.7">Gizlilik Politikası</a>
+                        <a href="#" class="text-white text-decoration-none" style="opacity:0.7">Kullanım Şartları</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-primary text-white border-0">
+                    <h5 class="modal-title" id="loginModalLabel"><i class="fas fa-user-graduate me-2"></i>Öğrenci Bilgi Sistemi</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Öğrenci Numarası</label>
+                            <input type="text" class="form-control" placeholder="Örn: 2026102030">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Şifre</label>
+                            <input type="password" class="form-control" placeholder="******">
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">Beni Hatırla</label>
+                            </div>
+                            <a href="#" class="text-decoration-none small text-primary fw-bold">Şifremi Unuttum</a>
+                        </div>
+                        <button type="button" class="btn btn-warning w-100 mb-2 fw-bold" onclick="alert('Giriş başarılı! Öğrenci paneline yönlendiriliyorsunuz.')" data-bs-dismiss="modal">Giriş Yap</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Apply Modal -->
+    <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-warning text-dark border-0">
+                    <h5 class="modal-title fw-bold" id="applyModalLabel"><i class="fas fa-paper-plane me-2"></i>Online Başvuru Formu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Adınız</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Soyadınız</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">E-Posta</label>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Telefon</label>
+                                <input type="tel" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label">İlgilendiğiniz Program</label>
+                                <select class="form-select">
+                                    <option selected>Seçiniz...</option>
+                                    <option value="1">Mühendislik Fakültesi</option>
+                                    <option value="2">Tıp Fakültesi</option>
+                                    <option value="3">Hukuk Fakültesi</option>
+                                    <option value="4">İşletme Fakültesi</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label">Mesajınız / Eklemek İstedikleriniz</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                            <div class="col-12 text-end mt-4">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
+                                <button type="button" class="btn btn-primary fw-bold" onclick="alert('Başvurunuz başarıyla alınmıştır. Teşekkür ederiz!')" data-bs-dismiss="modal">Başvuruyu Gönder</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-dark border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-white">Sanal Kampüs Turu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <div class="d-flex align-items-center justify-content-center text-white" style="background: url('https://images.unsplash.com/photo-1541339907198-e08756ebafe3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover; position: relative;">
+                            <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6);"></div>
+                            <div class="text-center" style="z-index:1;">
+                                <i class="fas fa-play-circle fa-5x mb-3 text-warning" style="cursor:pointer;" onclick="alert('Video oynatılıyor...')"></i>
+                                <h3>Tanıtım Videosu</h3>
+                                <p>Sanal gerçeklik ve 360 derece kampüs turunu deneyimleyin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- News Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="newsOffcanvas" aria-labelledby="newsOffcanvasLabel">
+        <div class="offcanvas-header bg-light border-bottom">
+            <h5 class="offcanvas-title fw-bold text-primary" id="newsOffcanvasLabel">Haber Detayı</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded mb-3 shadow-sm" alt="Haber Detay">
+            <span class="badge bg-primary mb-2">Akademik</span>
+            <span class="text-muted small ms-2"><i class="far fa-calendar-alt me-1"></i> Güncel Haber</span>
+            <h4 class="fw-bold mt-2">Detaylı Haber İçeriği</h4>
+            <hr>
+            <p>Üniversitemizin düzenlediği son etkinlikler ve akademik başarılar büyük ses getirdi. Yeni dönemde laboratuvar altyapıları güçlendirildi ve öğrencilere sunulan imkanlar artırıldı.</p>
+            <p>Araştırma ve geliştirme projelerinde ulusal bazda ilk 10'da yer alan üniversitemiz, aynı zamanda global partnerlerle de iş birliği ağını genişletiyor.</p>
+            
+            <div class="card bg-light border-0 mt-4">
+                <div class="card-body">
+                    <h6 class="fw-bold"><i class="fas fa-share-alt me-2 text-warning"></i>Haberi Paylaş</h6>
+                    <div class="d-flex gap-2 mt-3">
+                        <button class="btn btn-sm btn-primary"><i class="fab fa-facebook-f"></i></button>
+                        <button class="btn btn-sm btn-info text-white"><i class="fab fa-twitter"></i></button>
+                        <button class="btn btn-sm btn-success"><i class="fab fa-whatsapp"></i></button>
+                        <button class="btn btn-sm btn-secondary" onclick="alert('Bağlantı kopyalandı!')"><i class="fas fa-link"></i> Kopyala</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
