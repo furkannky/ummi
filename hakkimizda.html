@@ -27,13 +27,13 @@
                 </div>
                 <div class="col-md-6 text-end">
                     <a href="#" class="me-3" data-bs-toggle="modal" data-bs-target="#loginModal">Öğrenci Bilgi Sistemi</a>
-                    <a href="#" class="me-3">Kütüphane</a>
-                    <a href="#" class="me-3">Mezunlar</a>
+                    <a href="javascript:void(0)" class="me-3" onclick="showToast('Kütüphane', 'Dijital kütüphaneye yönlendiriliyorsunuz.', 'info')">Kütüphane</a>
+                    <a href="javascript:void(0)" class="me-3" onclick="showToast('Mezunlar', 'Mezun bilgi sistemine yönlendiriliyorsunuz.', 'info')">Mezunlar</a>
                     <span class="social-links-top ms-2">
-                        <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://facebook.com" target="_blank" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </span>
                 </div>
             </div>
@@ -64,12 +64,12 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Araştırma</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Araştırma Merkezleri</a></li>
-                            <li><a class="dropdown-item" href="#">Laboratuvarlar</a></li>
-                            <li><a class="dropdown-item" href="#">Yayınlar</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0)" onclick="showToast('Araştırma', 'Araştırma merkezleri sayfası güncelleniyor.', 'warning')">Araştırma Merkezleri</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0)" onclick="showToast('Laboratuvarlar', 'Laboratuvarlar sayfası güncelleniyor.', 'warning')">Laboratuvarlar</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0)" onclick="showToast('Yayınlar', 'Yayınlar sayfası güncelleniyor.', 'warning')">Yayınlar</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Kampüs Hayatı</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="showToast('Kampüs', 'Kampüs yaşamı sayfası yakında yayında!', 'info')">Kampüs Hayatı</a></li>
                     <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
                 </ul>
                 <div class="d-flex">
@@ -132,32 +132,32 @@
                     </a>
                     <p class="mb-4">Eğitimde sınırları kaldıran yenilikçi vizyonumuzla, geleceğin dünyasını inşa edecek liderleri bugünden yetiştiriyoruz.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h5>Hızlı Linkler</h5>
                     <ul class="footer-links">
-                        <li><a href="#">Hakkımızda</a></li>
-                        <li><a href="#">Akademik</a></li>
-                        <li><a href="#">Araştırma</a></li>
-                        <li><a href="#">Kampüs Hayatı</a></li>
-                        <li><a href="#">İnsan Kaynakları</a></li>
-                        <li><a href="#">Kariyer Merkezi</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="programlar.html">Akademik</a></li>
+                        <li><a href="javascript:void(0)" onclick="showToast('Araştırma', 'Bu sayfa yakında eklenecek.', 'warning')">Araştırma</a></li>
+                        <li><a href="javascript:void(0)" onclick="showToast('Kampüs', 'Kampüs yaşamı yakında eklenecek.', 'warning')">Kampüs Hayatı</a></li>
+                        <li><a href="javascript:void(0)" onclick="showToast('İK', 'İnsan Kaynakları yakında eklenecek.', 'warning')">İnsan Kaynakları</a></li>
+                        <li><a href="javascript:void(0)" onclick="showToast('Kariyer', 'Kariyer Merkezi yakında eklenecek.', 'warning')">Kariyer Merkezi</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5>Aday Öğrenciler</h5>
                     <ul class="footer-links">
-                        <li><a href="#">Başvuru Süreci</a></li>
-                        <li><a href="#">Burs İmkanları</a></li>
-                        <li><a href="#">Yurtlar ve Konaklama</a></li>
-                        <li><a href="#">Değişim Programları</a></li>
-                        <li><a href="#">Sıkça Sorulan Sorular</a></li>
+                        <li><a href="javascript:void(0)" onclick="showToast('Başvuru', 'Başvuru süreci detayları hazırlanıyor.', 'info')">Başvuru Süreci</a></li>
+                        <li><a href="javascript:void(0)" onclick="showToast('Burs', 'Burs imkanları sayfası hazırlanıyor.', 'info')">Burs İmkanları</a></li>
+                        <li><a href="javascript:void(0)" onclick="showToast('Yurtlar', 'Yurtlar ve Konaklama sayfası hazırlanıyor.', 'info')">Yurtlar ve Konaklama</a></li>
+                        <li><a href="javascript:void(0)" onclick="showToast('Değişim', 'Değişim programları sayfası hazırlanıyor.', 'info')">Değişim Programları</a></li>
+                        <li><a href="javascript:void(0)" onclick="showToast('SSS', 'Sıkça Sorulan Sorular sayfası hazırlanıyor.', 'info')">Sıkça Sorulan Sorular</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -184,8 +184,8 @@
                         <p class="mb-0">&copy; 2026 Akademi Üniversitesi. Tüm hakları saklıdır.</p>
                     </div>
                     <div class="col-md-6 text-md-end mt-3 mt-md-0">
-                        <a href="#" class="text-white text-decoration-none me-3" style="opacity:0.7">Gizlilik Politikası</a>
-                        <a href="#" class="text-white text-decoration-none" style="opacity:0.7">Kullanım Şartları</a>
+                        <a href="javascript:void(0)" class="text-white text-decoration-none me-3" style="opacity:0.7" onclick="showToast('Gizlilik', 'Gizlilik politikası dokümanı indiriliyor.', 'info')">Gizlilik Politikası</a>
+                        <a href="javascript:void(0)" class="text-white text-decoration-none" style="opacity:0.7" onclick="showToast('Kullanım', 'Kullanım şartları dokümanı indiriliyor.', 'info')">Kullanım Şartları</a>
                     </div>
                 </div>
             </div>
@@ -216,7 +216,7 @@
                             </div>
                             <a href="#" class="text-decoration-none small text-primary fw-bold">Şifremi Unuttum</a>
                         </div>
-                        <button type="button" class="btn btn-warning w-100 mb-2 fw-bold" onclick="alert('Giriş başarılı! Öğrenci paneline yönlendiriliyorsunuz.')" data-bs-dismiss="modal">Giriş Yap</button>
+                        <button type="button" class="btn btn-warning w-100 mb-2 fw-bold" onclick="showToast('Giriş Başarılı!', 'Öğrenci paneline yönlendiriliyorsunuz.', 'success')" data-bs-dismiss="modal">Giriş Yap</button>
                     </form>
                 </div>
             </div>
@@ -266,7 +266,7 @@
                             </div>
                             <div class="col-12 text-end mt-4">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
-                                <button type="button" class="btn btn-primary fw-bold" onclick="alert('Başvurunuz başarıyla alınmıştır. Teşekkür ederiz!')" data-bs-dismiss="modal">Başvuruyu Gönder</button>
+                                <button type="button" class="btn btn-primary fw-bold" onclick="showToast('Başvuru Alındı!', 'Başvurunuz başarıyla alınmıştır. Teşekkür ederiz!', 'success')" data-bs-dismiss="modal">Başvuruyu Gönder</button>
                             </div>
                         </div>
                     </form>
@@ -288,7 +288,7 @@
                         <div class="d-flex align-items-center justify-content-center text-white" style="background: url('https://images.unsplash.com/photo-1541339907198-e08756ebafe3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover; position: relative;">
                             <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6);"></div>
                             <div class="text-center" style="z-index:1;">
-                                <i class="fas fa-play-circle fa-5x mb-3 text-warning" style="cursor:pointer;" onclick="alert('Video oynatılıyor...')"></i>
+                                <i class="fas fa-play-circle fa-5x mb-3 text-warning" style="cursor:pointer;" onclick="showToast('Sanal Tur', 'Tanıtım videosu yükleniyor...', 'info')"></i>
                                 <h3>Tanıtım Videosu</h3>
                                 <p>Sanal gerçeklik ve 360 derece kampüs turunu deneyimleyin.</p>
                             </div>
@@ -321,7 +321,7 @@
                         <button class="btn btn-sm btn-primary"><i class="fab fa-facebook-f"></i></button>
                         <button class="btn btn-sm btn-info text-white"><i class="fab fa-twitter"></i></button>
                         <button class="btn btn-sm btn-success"><i class="fab fa-whatsapp"></i></button>
-                        <button class="btn btn-sm btn-secondary" onclick="alert('Bağlantı kopyalandı!')"><i class="fas fa-link"></i> Kopyala</button>
+                        <button class="btn btn-sm btn-secondary" onclick="showToast('Bağlantı', 'Haber bağlantısı panoya kopyalandı!', 'success')"><i class="fas fa-link"></i> Kopyala</button>
                     </div>
                 </div>
             </div>
